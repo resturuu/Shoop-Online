@@ -1,0 +1,50 @@
+h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(0, 89, 255);
+}
+
+form {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1em;
+    margin: 2em auto;
+    width: 17em;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-size: 13px;
+    color: #555;
+
+}
+
+input[type="text"],textarea{
+    margin-top: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 8px;
+    width: 95%;
+    background: #efefef;
+    border: 1px;
+    border-radius: 10px;
+    font-size: 10pt;
+    margin: 6px 0px;
+}
+
+button {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    background: rgb(0, 89, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+footer {
+    font-size: 12px; /* Ukuran teks */
+    padding: 10px 0; /* Jarak ke bawah */
+    text-align: center; /* Teks ditengahkan */
+    color: #55555599;
+}
