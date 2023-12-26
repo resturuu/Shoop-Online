@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Pembayaran Toko Online</title>
+<style>
+body {
+ font-family: Arial, sans-serif;
+}
+form {
+ width: 600px;
+ margin: 0 auto;
+}
+label {
+ display: block;
+ margin-top: 10px;
+}
+input[type="text"], input[type="email"], select {
+ width: 100%;
+ padding: 10px;
+ margin-top: 5px;
+}
+button[type="submit"] {
+ margin-top: 20px;
+ padding: 10px 20px;
+ background-color: #007BFF;
+ color: white;
+ border: none;
+ cursor: pointer;
+}
+button[type="submit"]:hover {
+ background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<h2>Form Pembayaran Toko Online</h2>
+
+<form id="paymentForm">
+ <label for="nama">Nama Pemesan:</label>
+ <input type="text" id="nama" name="nama" required>
+
+ <label for="email">Email:</label>
+ <input type="email" id="email" name="email" required>
+
+ <label for="produk">Produk:</label>
+ <select id="produk" name="produk">
+    <option value="produk1">Produk 1</option>
+    <option value="produk2">Produk 2</option>
+    <option value="produk3">Produk 3</option>
+ </select>
+
+ <label for="jumlah">Jumlah:</label>
+ <input type="text" id="jumlah" name="jumlah" required>
+
+ <label for="metode">Metode Pembayaran:</label>
+ <select id="metode" name="metode">
+    <option value="bca">BCA - XXXXXXX</option>
+    <option value="bni">BNI - XXXXXXX</option>
+    <option value="bri">BRI - XXXXXXX</option>
+ </select>
+
+ <button type="submit">Bayar</button>
+</form>
+
+<script>
+document.getElementById('paymentForm').addEventListener('submit', function(event) {
+ event.preventDefault(); // Prevent form from submitting
+
+ // Display notification
+ alert('Pembayaran berhasil.');
+
+ // Redirect to product page after a few seconds
+ setTimeout(function() {
+   window.location.href = 'produk.html';
+ }, 3000);
+});
+</script>
+
+</body>
+</html>
